@@ -1,14 +1,16 @@
 import '../styles/reset.css';
 import '../styles/style.css';
 
-const Project = ({
+import ProjectFocus from './projectFocus'
+
+const ProjectCard = ({
     title,
     description,
     repo,
     live
 }) => {
     return (
-        <section className="project">
+        <section className="project"  onClick={<ProjectFocus />}>
             <img src="https://picsum.photos/400/200" 
             className="project__img" 
             alt={title}></img>
@@ -23,7 +25,7 @@ const Project = ({
                 target="_target" 
                 alt="repo link" 
                 rel="noopener noreferrer"
-                >// Repository Link</a>
+                >Repository Link</a>
 
 
 
@@ -32,10 +34,10 @@ const Project = ({
                 target="_target" 
                 alt="live link" 
                 rel="noopener noreferrer"
-                >// View it live</a>
+                >View it live</a>
             </section>
         </section>
     )
 }
 
-export default Project;
+export default ProjectCard;

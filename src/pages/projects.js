@@ -1,7 +1,7 @@
 import '../styles/reset.css';
 import '../styles/style.css';
 
-import Project from '../components/project';
+import ProjectCard from '../components/projectCard';
 
 const Projects = () => {
 
@@ -18,12 +18,19 @@ const Projects = () => {
         <section style={styles.div} class="projects">
             <h1 className="projects__heading">Projects</h1>
             <div className="projects__div">
-                <Project
+                <ProjectCard
                     title="Portfolio"
                     description="A portfolio to introduce myself and my work to others."
                     repo="https://github.com/Jesse-DeJong/portfolio-latvia"
                     live="https://jesse-dejong.github.io/portfolio-latvia"
-                ></Project>
+                ></ProjectCard>
+
+                <ProjectCard
+                    title="Basic Calculator"
+                    description="A basic calculator to handle simple arithmatic."
+                    repo="google.com.au"
+                    live="google.com.au"
+                ></ProjectCard>
             </div>
         </section>
     )
