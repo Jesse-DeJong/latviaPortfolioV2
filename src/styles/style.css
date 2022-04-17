@@ -11,6 +11,7 @@
   border-radius: 5px;
 }
 
+/* Landing Page */
 .landing {
   font-size: 50px;
   display: flex;
@@ -23,4 +24,14 @@
 }
 .landing__script {
   font-family: "Big Shoulders Inline Display", cursive;
+}
+
+/* Nav */
+.nav {
+  display: flex;
+  justify-content: center;
+}
+.nav__link {
+  padding: 10px 10px;
+  /* Y X */
 }

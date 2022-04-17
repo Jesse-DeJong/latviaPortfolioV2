@@ -34,6 +34,7 @@ $script: 'Big Shoulders Inline Display', cursive;
 }
 
 //==============================================================================//
+/* Landing Page */
 
 .landing {
 
@@ -48,5 +49,17 @@ $script: 'Big Shoulders Inline Display', cursive;
 
     &__script {
         font-family: $script;
+    }
+}
+
+//==============================================================================//
+/* Nav */
+
+.nav {
+    display: flex;
+    justify-content: center;
+
+    &__link {
+        padding: 10px 10px; /* Y X */
     }
 }

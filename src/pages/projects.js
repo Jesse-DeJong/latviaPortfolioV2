@@ -1,7 +1,7 @@
 import '../styles/reset.css';
 import '../styles/style.css';
 
-const Landing = () => {
+const Projects = () => {
 
     // less 75 pixels to compensate for the navbar
     const windowHeight = document.documentElement.clientHeight;
@@ -20,4 +20,4 @@ const Landing = () => {
     )
 }
 
-export default Landing;
+export default Projects;
