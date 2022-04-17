@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Display:wght@100&family=Megrim&display=swap");
+/* Variables */
+/* Screensize */
+/* Components */
+/* Global */
+* {
+  color: white;
+  background-color: black;
+  font-family: "Big Shoulders Inline Display", cursive;
+  list-style-type: none;
+  border-radius: 5px;
+}
+
+.landing {
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.landing__heading {
+  font-family: "Megrim", cursive;
+}
+.landing__script {
+  font-family: "Big Shoulders Inline Display", cursive;
+}

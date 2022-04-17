@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Display:wght@100&family=Megrim&display=swap');
+
+/* Variables */
+$heading: 'Megrim', cursive;
+$script: 'Big Shoulders Inline Display', cursive;
+
+/* Screensize */
+@mixin screenSize {
+    @media only screen and (max-width: $small) {
+        grid-template-columns: 1;
+        grid-template-rows: repeat(10, 1fr);
+    }
+    @media only screen and (min-width: $large) {
+        grid-template-columns: 50px repeat(3, 1fr) 50px;
+        grid-template-rows: repeat(5, 1fr);
+        // height: 900px;
+    }
+}
+
+/* Components */
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Global */
+* {
+    color: white;
+    background-color: black;
+    font-family: $script;
+    list-style-type: none;
+    border-radius: 5px;
+}
+
+//==============================================================================//
+
+.landing {
+
+    font-size: 50px;
+
+    @include flexCenter;
+    flex-direction: column;
+
+    &__heading {
+        font-family: $heading;
+    }
+
+    &__script {
+        font-family: $script;
+    }
+}
