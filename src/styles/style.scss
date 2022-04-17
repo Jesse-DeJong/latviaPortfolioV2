@@ -4,6 +4,10 @@
 $heading: 'Megrim', cursive;
 $script: 'Big Shoulders Inline Display', cursive;
 
+$phone: 500px;
+$tablet: 900px;
+$desktop: 901px;
+
 /* Screensize */
 @mixin screenSize {
     @media only screen and (max-width: $small) {
@@ -37,29 +41,79 @@ $script: 'Big Shoulders Inline Display', cursive;
 /* Landing Page */
 
 .landing {
+    @media only screen and (min-width: $desktop) {
+        font-size: 50px;
 
-    font-size: 50px;
+        @include flexCenter;
+        flex-direction: column;
 
-    @include flexCenter;
-    flex-direction: column;
+        &__heading {
+            font-family: $heading;
+        }
 
-    &__heading {
-        font-family: $heading;
-    }
-
-    &__script {
-        font-family: $script;
+        &__script {
+            font-family: $script;
+        } 
     }
 }
+
+//==============================================================================//
+/* Projects */
+
+.projects {
+    @media only screen and (min-width: $desktop) {
+        display: flex;
+        flex-direction: column;    
+        align-items: center;
+        
+        &__heading {
+            font-size: 50px;
+            font-family: $heading;
+            margin: 10px;
+        }
+    }
+}
+
+/* Project - Component */
+.project {
+    @media only screen and (min-width: $desktop) {
+        font-size: 30px;
+        border: 1px solid red;
+
+        &__img {
+            border-radius: 5px 5px 0px 0px;
+        }
+
+        &__cardBody {
+            border: 1px solid aqua;
+            padding: 5px;
+        }
+
+        &__title {
+            font-family: $heading;
+        }
+
+        &__script {
+            font-family: $script;
+        }
+
+        &__anchor {
+            font-family: $script;
+        }
+    }
+}
+
 
 //==============================================================================//
 /* Nav */
 
 .nav {
-    display: flex;
-    justify-content: center;
+    @media only screen and (min-width: $desktop) {
+        display: flex;
+        justify-content: center;
 
-    &__link {
-        padding: 10px 10px; /* Y X */
+        &__link {
+            padding: 10px 10px; /* Y X */
+        }
     }
 }
