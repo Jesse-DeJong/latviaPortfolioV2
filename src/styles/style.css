@@ -28,6 +28,23 @@
   }
 }
 
+/* About Page */
+@media only screen and (min-width: 901px) {
+  .about {
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .about__heading {
+    font-family: "Megrim", cursive;
+  }
+  .about__script {
+    font-family: "Big Shoulders Inline Display", cursive;
+    padding: 10px 10%;
+  }
+}
+
 /* Projects */
 @media only screen and (min-width: 901px) {
   .projects {
@@ -62,6 +79,41 @@
     font-family: "Big Shoulders Inline Display", cursive;
   }
   .project__anchor {
+    font-family: "Big Shoulders Inline Display", cursive;
+  }
+}
+
+/* Skills */
+@media only screen and (min-width: 901px) {
+  .skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .skills__heading {
+    font-size: 50px;
+    font-family: "Megrim", cursive;
+    margin: 10px;
+  }
+}
+
+/* Skill - Component */
+@media only screen and (min-width: 901px) {
+  .skill {
+    font-size: 30px;
+    border: 1px solid red;
+  }
+  .skill__img {
+    border-radius: 5px 5px 0px 0px;
+  }
+  .skill__cardBody {
+    border: 1px solid aqua;
+    padding: 5px;
+  }
+  .skill__title {
+    font-family: "Megrim", cursive;
+  }
+  .skill__script {
     font-family: "Big Shoulders Inline Display", cursive;
   }
 }

@@ -58,6 +58,27 @@ $desktop: 901px;
 }
 
 //==============================================================================//
+/* About Page */
+
+.about {
+    @media only screen and (min-width: $desktop) {
+        font-size: 40px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;    
+
+        &__heading {
+            font-family: $heading;
+        }
+
+        &__script {
+            font-family: $script;
+            padding: 10px 10%;
+        } 
+    }
+}
+
+//==============================================================================//
 /* Projects */
 
 .projects {
@@ -103,6 +124,49 @@ $desktop: 901px;
     }
 }
 
+//==============================================================================//
+/* Skills */
+
+.skills {
+    @media only screen and (min-width: $desktop) {
+        display: flex;
+        flex-direction: column;    
+        align-items: center;
+        
+        &__heading {
+            font-size: 50px;
+            font-family: $heading;
+            margin: 10px;
+        }
+    }
+}
+
+/* Skill - Component */
+.skill {
+    @media only screen and (min-width: $desktop) {
+        font-size: 30px;
+        border: 1px solid red;
+
+        &__img {
+            border-radius: 5px 5px 0px 0px;
+        }
+
+        &__cardBody {
+            border: 1px solid aqua;
+            padding: 5px;
+        }
+
+        &__title {
+            font-family: $heading;
+        }
+
+        &__script {
+            font-family: $script;
+        }
+
+
+    }
+}
 
 //==============================================================================//
 /* Nav */
