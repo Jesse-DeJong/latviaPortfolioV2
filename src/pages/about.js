@@ -1,6 +1,8 @@
 import '../styles/reset.css';
 import '../styles/style.css';
 
+import React, { useState } from 'react';
+
 const About = () => {
 
     // less 75 pixels to compensate for the navbar
