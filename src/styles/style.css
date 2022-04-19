@@ -79,6 +79,13 @@ body {
 .project__img {
   object-fit: cover;
 }
+.project__button {
+  font-family: "Megrim", cursive;
+  font-size: 30px;
+  padding: 0px 30px;
+  background-color: red;
+  border-radius: 5px;
+}
 @media only screen and (max-width: 500px) {
   .project__div {
     flex-direction: column;
@@ -92,6 +99,49 @@ body {
   }
   .project__img {
     width: 300px;
+    border-radius: 5px 5px 0px 0px;
+  }
+}
+
+/* ProjectFOCUS - Component */
+.projectFocus {
+  background-color: darkslategray;
+}
+.projectFocus__cardBody {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+}
+.projectFocus__title {
+  justify-content: center;
+  font-family: "Megrim", cursive;
+  font-size: 30px;
+  padding-bottom: 5px;
+}
+.projectFocus__img {
+  object-fit: cover;
+}
+.projectFocus__button {
+  font-family: "Megrim", cursive;
+  font-size: 30px;
+  padding: 0px 30px;
+  background-color: red;
+  border-radius: 5px;
+}
+@media only screen and (max-width: 500px) {
+  .projectFocus__div {
+    flex-direction: column;
+  }
+}
+@media only screen and (min-width: 901px) {
+  .projectFocus {
+    width: 900px;
+    border-radius: 5px;
+    margin: 5px;
+  }
+  .projectFocus__img {
+    width: 900px;
     border-radius: 5px 5px 0px 0px;
   }
 }

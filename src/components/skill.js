@@ -1,8 +1,6 @@
 import '../styles/reset.css';
 import '../styles/style.css';
 
-import ProjectFocus from './projectFocus'
-
 const Skill = ({
     title,
     description

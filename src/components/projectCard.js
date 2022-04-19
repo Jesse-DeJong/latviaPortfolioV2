@@ -1,16 +1,20 @@
 import '../styles/reset.css';
 import '../styles/style.css';
 
-import ProjectFocus from './projectFocus'
-
 const ProjectCard = ({
     title,
     description,
     repo,
-    live
+    live,
+    setCount,
+    projectNumber
 }) => {
+    const handleClick = (e) => {
+        setCount(projectNumber)
+    };
+
     return (
-        <section className="project"  onClick={<ProjectFocus />}>
+        <section className="project">
             <img src="https://picsum.photos/400/200" 
             className="project__img" 
             alt={title}></img>
@@ -20,21 +24,7 @@ const ProjectCard = ({
 
                 <br></br>
 
-                <a className="project__anchor" 
-                href={repo} 
-                target="_target" 
-                alt="repo link" 
-                rel="noopener noreferrer"
-                >Repository Link</a>
-
-
-
-                <a className="project__anchor" 
-                href={live} 
-                target="_target" 
-                alt="live link" 
-                rel="noopener noreferrer"
-                >View it live</a>
+                <button className="project__button" onClick={handleClick}>View</button>
             </section>
         </section>
     )

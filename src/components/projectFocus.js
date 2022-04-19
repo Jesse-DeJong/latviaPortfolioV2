@@ -4,9 +4,15 @@ import '../styles/style.css';
 const ProjectFocus = ({
     title,
     description,
+    tools,
     repo,
-    live
+    live,
+    setCount
 }) => {
+    const handleClick = (e) => {
+        setCount(0)
+    };
+
     return (
         <section className="projectFocus">
             <img src="https://picsum.photos/400/200" 
@@ -14,6 +20,7 @@ const ProjectFocus = ({
             alt={title}></img>
             <section className="projectFocus__cardBody">
                 <h5 className="projectFocus__title">{title}</h5>
+                <p className='projectFocus__tools'>{[...tools]}</p>
                 <p className="projectFocus__script">{description}</p>
 
                 <br></br>
@@ -33,6 +40,10 @@ const ProjectFocus = ({
                 alt="live link" 
                 rel="noopener noreferrer"
                 >View it live</a>
+
+                <br></br>
+
+                <button className="projectFocus__button" onClick={handleClick}>Return</button>
             </section>
         </section>
     )

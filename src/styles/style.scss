@@ -106,8 +106,6 @@ $projectWidth: 300px;
 
 /* Project - Component */
 .project {
-
-
     // border: 1px solid red;
     background-color: darkslategray;
 
@@ -129,6 +127,14 @@ $projectWidth: 300px;
     &__img {
         object-fit: cover;     
     }
+
+    &__button {
+        font-family: $heading;
+        font-size: 30px;
+        padding: 0px 30px;
+        background-color: red;
+        border-radius: 5px;
+    }
     
     @media only screen and (max-width: $mobile) {
 
@@ -145,6 +151,59 @@ $projectWidth: 300px;
 
         &__img {
         width: $projectWidth;
+        border-radius: 5px 5px 0px 0px;
+        }
+    }
+
+}
+
+/* ProjectFOCUS - Component */
+.projectFocus {
+    // border: 1px solid red;
+    background-color: darkslategray;
+
+    &__cardBody {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        // border: 1px solid aqua;
+        padding: 5px;
+    }
+
+    &__title {
+        justify-content: center;
+        font-family: $heading;
+        font-size: 30px;
+        padding-bottom: 5px;
+    }
+
+    &__img {
+        object-fit: cover;     
+    }
+
+    &__button {
+        font-family: $heading;
+        font-size: 30px;
+        padding: 0px 30px;
+        background-color: red;
+        border-radius: 5px;
+    }
+    
+    @media only screen and (max-width: $mobile) {
+
+        &__div {
+            flex-direction: column;
+        }
+        
+    }
+
+    @media only screen and (min-width: $desktop) {
+        width: $projectWidth * 3;
+        border-radius: 5px;
+        margin: 5px;
+
+        &__img {
+        width: $projectWidth * 3;
         border-radius: 5px 5px 0px 0px;
         }
     }
