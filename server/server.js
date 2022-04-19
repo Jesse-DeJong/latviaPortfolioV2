@@ -1,18 +1,18 @@
-const path = require('path');
 const express = require('express');
+const path = require('path');
 
+const PORT = process.env.PORT || 8080;
 const app = express();
 
-const publicPath = path.join(__dirname, '..', 'public');
+app.use(express.urlencoded({ extended: false }));
+app.use(express.json());
 
-const port = process.env.PORT || 8080;
-
-app.use(express.static(publicPath));
+app.use('/public', express.static(path.join(__dirname, '../public')));
 
 app.get('*', (req, res) => {
-   res.sendFile(path.join(publicPath, 'index.html'));
+   res.sendFile(path.join(__dirname, '../public/index.html'));
 });
 
-app.listen(port, () => {
+app.listen(PORT, () => {
    console.log('Server is up!');
 });
