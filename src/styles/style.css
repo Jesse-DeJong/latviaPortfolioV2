@@ -5,7 +5,7 @@
 /* Global */
 * {
   color: white;
-  font-family: "Big Shoulders Inline Display", cursive;
+  font-family: Arial, Helvetica, sans-serif;
   list-style-type: none;
   border-radius: 5px;
 }
@@ -55,6 +55,9 @@ body {
     flex-direction: column;
     align-items: center;
   }
+  .projects__div {
+    display: flex;
+  }
   .projects__heading {
     font-size: 50px;
     font-family: "Megrim", cursive;
@@ -65,24 +68,29 @@ body {
 /* Project - Component */
 @media only screen and (min-width: 901px) {
   .project {
-    font-size: 30px;
-    border: 1px solid red;
-  }
-  .project__img {
-    border-radius: 5px 5px 0px 0px;
+    width: 300px;
+    margin: 5px;
+    background-color: darkslategray;
   }
   .project__cardBody {
-    border: 1px solid aqua;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 5px;
   }
   .project__title {
+    justify-content: center;
     font-family: "Megrim", cursive;
+    font-size: 30px;
+    padding-bottom: 5px;
+  }
+  .project__img {
+    border-radius: 5px 5px 0px 0px;
+    object-fit: cover;
+    width: 300px;
   }
   .project__script {
-    font-family: "Big Shoulders Inline Display", cursive;
-  }
-  .project__anchor {
-    font-family: "Big Shoulders Inline Display", cursive;
+    font-family: Arial, Helvetica, sans-serif;
   }
 }
 

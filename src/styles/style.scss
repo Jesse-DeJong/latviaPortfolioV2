@@ -32,7 +32,7 @@ $desktop: 901px;
 /* Global */
 * {
     color: white;
-    font-family: $script;
+    font-family: Arial, Helvetica, sans-serif;
     list-style-type: none;
     border-radius: 5px;
 }
@@ -84,6 +84,7 @@ body {
 
 //==============================================================================//
 /* Projects */
+$projectWidth: 300px;
 
 .projects {
     @media only screen and (min-width: $desktop) {
@@ -91,6 +92,10 @@ body {
         flex-direction: column;    
         align-items: center;
         
+        &__div {
+            display: flex;
+        }
+
         &__heading {
             font-size: 50px;
             font-family: $heading;
@@ -102,28 +107,37 @@ body {
 /* Project - Component */
 .project {
     @media only screen and (min-width: $desktop) {
-        font-size: 30px;
-        border: 1px solid red;
+        width: $projectWidth;
+        margin: 5px;
 
-        &__img {
-            border-radius: 5px 5px 0px 0px;
-        }
+        // border: 1px solid red;
+        background-color: darkslategray;
 
         &__cardBody {
-            border: 1px solid aqua;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            // border: 1px solid aqua;
             padding: 5px;
         }
 
         &__title {
+            justify-content: center;
             font-family: $heading;
+            font-size: 30px;
+            padding-bottom: 5px;
+        }
+
+        &__img {
+            border-radius: 5px 5px 0px 0px;
+
+            object-fit: cover;
+            width: $projectWidth;
         }
 
         &__script {
-            font-family: $script;
-        }
-
-        &__anchor {
-            font-family: $script;
+            font-family: Arial, Helvetica, sans-serif;
         }
     }
 }
@@ -140,7 +154,6 @@ $skillWidth: 300px;
         
         &__div {
             display: flex;
-
         }
 
         &__heading {
