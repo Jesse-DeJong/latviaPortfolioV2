@@ -27,6 +27,16 @@ const Skills = () => {
                 title="CSS"
                 description="Cascading Style Sheets (CSS) is a stylesheet language used to describe the presentation of a document written in HTML or XML. CSS describes how elements should be rendered on screen, on paper, in speech, or on other media."
                 ></Skill>
+
+                <Skill
+                title="Javascript"
+                description="JavaScript (JS) is a lightweight, interpreted, or just-in-time compiled programming language with first-class functions."
+                ></Skill>
+
+                <Skill
+                title="React"
+                description="React (also known as React.js or ReactJS) is a free and open-source front-end JavaScript library[3] for building user interfaces based on UI components. It is maintained by Meta (formerly Facebook)."
+                ></Skill>
             </div>
         </section>
     )

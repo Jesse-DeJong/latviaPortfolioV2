@@ -63,8 +63,12 @@ const About = () => {
             <br></br>
 
             <p className="about__script">A nascent software engineer and <span id="bio"></span> looking to expand my coding skillset and create cool things</p>
-            <p className="about__script">I am a Full Stack Web Developer with a diverse background in business, finance and government services. Bringing with me a broad set of transferable skills such as problem solving, taking initiative and high level communication with clients and customers alike; alongside a history of driving business objectives to achieve stakeholder outcomes.</p>
-            <p className="about__script">I am now seeking to apply these well honed skills along with my newly developed technical skills to a field more suited to my interests and capabilities.</p>
+            <p className="about__script">Full Stack Web Developer with a diverse background in business, finance and government services. Bringing with me a broad set of transferable skills such as problem solving, taking initiative and high level communication with clients and customers alike; alongside a history of driving business objectives to achieve stakeholder outcomes.</p>
+            <p className="about__script">Seeking to apply these well honed skills along with my newly developed technical skills to a field more suited to my interests and capabilities.</p>
+        
+            <br></br>
+
+            <p className='about__script'>Add more stuff...</p>
         </section>
     )
 }
