@@ -72,10 +72,10 @@ const Projects = () => {
                         <>
                             <ProjectFocus
                                 title="Basic Calculator"
-                                description="A basic calculator to handle simple arithmatic."
+                                description="A basic calculator to handle simple arithmatic functions of addition, subtraction, division and multiplication. This app utilises HTML and CSS for creation and styling of the elements on the screen and javascript behind the scenes to process the functionality of the calculator."
                                 tools={["HTML", "CSS", "JS"]}
-                                repo="google.com.au"
-                                live="google.com.au"
+                                repo="https://github.com/Jesse-DeJong/basiccalc"
+                                live="https://jesse-dejong.github.io/basiccalc/"
                                 setCount={setCount}
                             ></ProjectFocus>
                         </>

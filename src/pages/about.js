@@ -67,9 +67,7 @@ const About = () => {
             <br></br>
 
             <p className="about__script">A nascent software engineer and <span id="bio"></span> looking to expand my knowledge and create cool things</p>
-            <p className="about__script">Full Stack Web Developer with a diverse background in business, finance and government services. Bringing with me a broad set of highly transferable skills such as problem solving, taking initiative and high level communication with clients and customers alike; alongside a history of driving business objectives to achieve stakeholder outcomes.</p>
-            <p className="about__script">Seeking to apply these well honed skills along with my newly developed technical skills to a field more suited to my interests and capabilities.</p>
-        
+
             <br></br>
 
             <p className='about__heading'>Technical Skills</p>
@@ -119,6 +117,12 @@ const About = () => {
                     description="Git is software for tracking changes in any set of files, usually used for coordinating work among programmers collaboratively developing source code during software development. Its goals include speed, data integrity, and support for distributed, non-linear workflows (thousands of parallel branches running on different systems)."
                 ></Skill2>
         </div>
+
+        <br></br>
+
+            <p className="about__script">Full Stack Web Developer with a diverse background in business, finance and government services. Bringing with me a broad set of highly transferable skills such as problem solving, taking initiative and high level communication with clients and customers alike; alongside a history of driving business objectives to achieve stakeholder outcomes.</p>
+            <p className="about__script">Seeking to apply these well honed skills along with my newly developed technical skills to a field more suited to my interests and capabilities.</p>
+        
         </section>
     )
 }
