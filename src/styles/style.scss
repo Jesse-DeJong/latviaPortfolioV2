@@ -61,15 +61,27 @@ body {
     &__heading {
         font-family: $heading;
     }
+    &__subheading {
+        font-family: $script;
+    }
 
     &__script {
-        font-family: $script;
+        // font-family: $script;
         padding: 10px 10%;
     }
+    
 
     @media only screen and (min-width: $desktop) {
- 
+        &__skills {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
     }
+}
+
+#bio {
+    cursor: pointer;
 }
 
 //==============================================================================//
@@ -246,11 +258,12 @@ $skillWidth: 300px;
 /* Skill - Component */
 .skill {
     // border: 1px solid red;
-    background-color: darkslategray;
+    // background-color: darkslategray;
 
     &__cardBody {
         display: flex;
         flex-direction: column;
+        
         align-items: center;
         // border: 1px solid aqua;
         padding: 5px;
@@ -263,12 +276,19 @@ $skillWidth: 300px;
         font-family: $heading;
     }
 
+    &__icon {
+        display: flex;
+        justify-content: center;
+        font-size: 75px;
+    }
+
     &__img {
         object-fit: cover;
     }
 
     &__script {
         padding: 5px;
+        font-size: 20px;
     }
 
     @media only screen and (max-width: $mobile) {
