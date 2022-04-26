@@ -143,6 +143,9 @@ body {
   background-color: red;
   border-radius: 5px;
 }
+.projectFocus__tools {
+  display: flex;
+}
 @media only screen and (max-width: 500px) {
   .projectFocus__div {
     flex-direction: column;
@@ -158,6 +161,14 @@ body {
     width: 900px;
     border-radius: 5px 5px 0px 0px;
   }
+}
+
+.badge {
+  background-color: gold;
+  border-radius: 5px;
+  color: black;
+  padding: 3px;
+  margin: 1px;
 }
 
 /* Skills */

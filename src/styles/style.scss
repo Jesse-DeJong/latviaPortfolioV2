@@ -201,6 +201,10 @@ $projectWidth: 300px;
         border-radius: 5px;
     }
     
+    &__tools {
+        display: flex;
+    }
+
     @media only screen and (max-width: $mobile) {
 
         &__div {
@@ -220,6 +224,14 @@ $projectWidth: 300px;
         }
     }
 
+}
+
+.badge {
+    background-color: gold;
+    border-radius: 5px;
+    color: black;
+    padding: 3px;
+    margin: 1px;
 }
 
 //==============================================================================//

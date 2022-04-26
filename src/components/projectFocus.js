@@ -1,6 +1,8 @@
 import '../styles/reset.css';
 import '../styles/style.css';
 
+import Badge from './badge';
+
 const ProjectFocus = ({
     title,
     description,
@@ -13,6 +15,20 @@ const ProjectFocus = ({
         setCount(0)
     };
 
+    const toolsArr = [];
+    
+    const toolBadges = () => {
+
+
+        tools.map(tool => {
+            toolsArr.push(
+                <Badge tool={tool} />
+            )
+        })
+        return toolsArr;
+    };
+    toolBadges();
+
     return (
         <section className="projectFocus">
             <img src="https://picsum.photos/400/200" 
@@ -20,7 +36,7 @@ const ProjectFocus = ({
             alt={title}></img>
             <section className="projectFocus__cardBody">
                 <h5 className="projectFocus__title">{title}</h5>
-                <p className='projectFocus__tools'>{[...tools]}</p>
+                <ul className='projectFocus__tools'>{toolsArr}</ul>
                 <p className="projectFocus__script">{description}</p>
 
                 <br></br>

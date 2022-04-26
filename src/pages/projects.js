@@ -47,6 +47,15 @@ const Projects = () => {
                                 setCount={setCount}
                                 projectNumber="2"
                             ></ProjectCard>
+
+                            <ProjectCard
+                                title="Project 3"
+                                description="Probably something to do with promises."
+                                repo="google.com.au"
+                                live="google.com.au"
+                                setCount={setCount}
+                                projectNumber="3"
+                            ></ProjectCard>
                         </>
                     : count == 1 ?
                         <>
@@ -64,9 +73,20 @@ const Projects = () => {
                             <ProjectFocus
                                 title="Basic Calculator"
                                 description="A basic calculator to handle simple arithmatic."
-                                tools={["HTML", "CSS", "JS", "React"]}
+                                tools={["HTML", "CSS", "JS"]}
                                 repo="google.com.au"
                                 live="google.com.au"
+                                setCount={setCount}
+                            ></ProjectFocus>
+                        </>
+                    : count == 3 ?
+                        <>
+                            <ProjectFocus
+                                title="Project 3"
+                                description="Probably something to do with promises."
+                                tools={["HTML", "CSS", "JS", "React"]}
+                                repo="https://github.com/Jesse-DeJong/portfolio-latvia"
+                                live="https://jesse-dejong.github.io/portfolio-latvia"
                                 setCount={setCount}
                             ></ProjectFocus>
                         </>
